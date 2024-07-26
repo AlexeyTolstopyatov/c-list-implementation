@@ -3,9 +3,9 @@
 #define __VEC_NULL 0
 
 struct vector {
-	int* data;		/*Данные*/
-	size_t capacity;/*Емкость*/
-	size_t size;	/*Размер*/
+	int* data;		
+	size_t capacity;/*Р•РјРєРѕСЃС‚СЊ*/
+	size_t size;	  /*Р Р°Р·РјРµСЂ*/
 };
 
 struct vector* vnew();
