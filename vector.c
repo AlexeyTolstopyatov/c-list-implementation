@@ -1,11 +1,11 @@
 /*
- * Ðåàëèçàöèÿ ïîâåäåíèÿ êîëëåêöèè
+ * Ð ÐµÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð¿Ð¾Ð²ÐµÐ´ÐµÐ½Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ°
  */
 #include "vector.h"
 
 /*
- * Ðåàëèçóåò íîâûé âåêòîð
- * Çàïîëíÿåò äàííûå íóëÿìè
+ * Ð˜Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ ÑÐ¿Ð¸ÑÐ¾Ðº
+ * Ð·Ð°Ð¿Ð¾Ð»Ð½ÑÐµÑ‚ ÑÐµÐ³Ð¼ÐµÐ½Ñ‚Ñ‹ Ð½ÑƒÐ»ÑÐ¼Ð¸
  */
 struct vector* vnew() {
 	struct vector* vec = (struct vector*)malloc(sizeof(struct vector));
@@ -20,7 +20,7 @@ struct vector* vnew() {
 }
 
 /*
- * Îñâîáîæäàåò ïàìÿòü îò âåêòîðà
+ * Ð£Ð´Ð°Ð»ÑÐµÑ‚ Ð¾Ð±ÑŒÐµÐºÑ‚
  */
 void vdel(struct vector* vec) {
 	free(vec->data);
@@ -28,7 +28,7 @@ void vdel(struct vector* vec) {
 }
 
 /*
- * Äîáàâëÿåò ýëåìåíò â êîíåö ñïèñêà
+ * Ð”Ð¾Ð±Ð°Ð²Ð»ÑÐµÑ‚ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² ÐºÐ¾Ð½ÐµÑ† ÑÐ¿Ð¸ÑÐºÐ°
  */
 int vadd(struct vector *vec, int element) {
 	if (vec->size == vec->capacity) {
